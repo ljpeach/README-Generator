@@ -64,6 +64,58 @@ function renderLicenseLink(license) {
   if (!license) {
     return "";
   }
+  switch (license) {
+    case "Apache 2.0 License":
+      return `[${license}](https://opensource.org/licenses/Apache-2.0)`;
+    case "Boost Software License 1.0":
+      return `[${license}](https://www.boost.org/LICENSE_1_0.txt)`;
+    case "BSD 3-Clause License":
+      return `[${license}](https://opensource.org/licenses/BSD-3-Clause)`;
+    case "BSD 2-Clause License":
+      return `[${license}](https://opensource.org/licenses/BSD-2-Clause)`;
+    case "Creative Commons Zero v1.0 Universal":
+      return `[${license}](http://creativecommons.org/publicdomain/zero/1.0/)`;
+    case "Eclipse Public License 1.0":
+      return `[${license}](https://opensource.org/licenses/EPL-1.0)`;
+    case "GNU General Public License v3.0":
+      return `[${license}](https://www.gnu.org/licenses/gpl-3.0)`;
+    case "GNU General Public License v2":
+      return `[${license}](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)`;
+    case "GNU Affero General Public License v3.0":
+      return `[${license}](https://www.gnu.org/licenses/agpl-3.0)`;
+    case "GNU Lesser General Public License v3":
+      return `[${license}](https://www.gnu.org/licenses/lgpl-3.0)`;
+    case "The Hippocratic License 3.0":
+      return `[${license}](https://firstdonoharm.dev)`;
+    case "IBM Public License Version 1.0":
+      return `[${license}](https://opensource.org/licenses/IPL-1.0)`;
+    case "ISC License":
+      return `[${license}](https://opensource.org/licenses/ISC)`;
+    case "The MIT License":
+      return `[${license}](https://opensource.org/licenses/MIT)`;
+    case "Mozilla Public License 2.0":
+      return `[${license}](https://opensource.org/licenses/MPL-2.0)`;
+    case "Attribution License (BY)":
+      return `[${license}](https://opendatacommons.org/licenses/by/)`;
+    case "Open Database License (ODbL)":
+      return `[${license}](https://opendatacommons.org/licenses/odbl/)`;
+    case "Public Domain Dedication and License (PDDL)":
+      return `[${license}](https://opendatacommons.org/licenses/pddl/)`;
+    case "The Perl License":
+      return `[${license}](https://opensource.org/licenses/Artistic-2.0)`;
+    case "The Artistic License 2.0":
+      return `[${license}](https://opensource.org/licenses/Artistic-2.0)`;
+    case "SIL Open Font License 1.1":
+      return `[${license}](https://opensource.org/licenses/OFL-1.1)`;
+    case "The Unlicense":
+      return `[${license}](http://unlicense.org/)`;
+    case "WTFPL":
+      return `[${license}](http://www.wtfpl.net/about/)`;
+    case "The zlib/libpng License":
+      return `[${license}](https://opensource.org/licenses/Zlib)`;
+    default:
+      return "";
+  }
   return `[${license}](./LICENSE.md)`;
 }
 

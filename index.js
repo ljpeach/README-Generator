@@ -79,7 +79,6 @@ const questions = [
 
 // Send data to generateMarkdown, write output to file. Confirm success if no errors. 
 function writeToFile(fileName, data) {
-    // console.log(fileName, data);
     fs.writeFile(fileName, generateMarkdown(data), (err) => err ? console.error(err) : console.log("Successfully written README.md to outs folder."));
 }
 

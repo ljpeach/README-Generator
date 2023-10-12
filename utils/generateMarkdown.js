@@ -1,9 +1,10 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Function that returns a license badge based on which license is passed in
+// If there is no license, returns an empty string
 function renderLicenseBadge(license) {
   if (!license) {
     return "";
   }
+  // Matches license with proper badge
   switch (license) {
     case "Apache 2.0 License":
       return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
@@ -58,12 +59,13 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Function that returns the license link.
+// If there is no license, returns an empty string
 function renderLicenseLink(license) {
   if (!license) {
     return "";
   }
+  // Matches license with proper license link.
   switch (license) {
     case "Apache 2.0 License":
       return `[${license}](https://opensource.org/licenses/Apache-2.0)`;
@@ -116,10 +118,9 @@ function renderLicenseLink(license) {
     default:
       return "";
   }
-  return `[${license}](./LICENSE.md)`;
 }
 
-// TODO: Create a function that returns the license section of README
+// Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (!license) {
@@ -128,7 +129,7 @@ function renderLicenseSection(license) {
   return `Liscenced under ${renderLicenseLink(license)}`;
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}

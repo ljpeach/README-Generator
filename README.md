@@ -19,7 +19,7 @@ A console based application that asks the user a few questions before generating
 
 ## Tutorial Video
 
-[Click here for tutorial video]()
+[Click here for tutorial video](https://youtu.be/897I6fWervk)
 
 ## Credits
  Thank you to Poornima Sewak for assistance with creating an output directory.\

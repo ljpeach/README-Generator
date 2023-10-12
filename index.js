@@ -60,6 +60,7 @@ const questions = [
             "Public Domain Dedication and License (PDDL)",
             "The Perl License",
             "The Artistic License 2.0",
+            "SIL Open Font License 1.1",
             "The Unlicense",
             "WTFPL",
             "The zlib/libpng License"]
